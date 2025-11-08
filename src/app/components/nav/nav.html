@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-modern">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <div class="logo-container">
+        <svg class="weather-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="5" fill="#FDB813"/>
+          <path d="M12 1v3M12 20v3M23 12h-3M4 12H1M20.66 3.34l-2.12 2.12M5.46 18.54l-2.12 2.12M20.66 20.66l-2.12-2.12M5.46 5.46L3.34 3.34" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">World Weather</span>
+      </div>
+    </a>
+
+    <!-- Toggler Button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Navigation Links (if needed) -->
+      <ul class="navbar-nav mx-auto">
+        <!-- Add your nav items here if needed -->
+      </ul>
+
+      <!-- Temperature Unit Toggle -->
+      <div class="temp-toggle-wrapper">
+        <span class="temp-label celsius">°C</span>
+        <label class="temp-switch">
+          <input type="checkbox" (click)="toggleUnit()" />
+          <span class="temp-slider"></span>
+        </label>
+        <span class="temp-label fahrenheit">°F</span>
+      </div>
+    </div>
+  </div>
+</nav>

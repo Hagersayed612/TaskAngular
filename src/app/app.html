@@ -1,0 +1,19 @@
+<!-- Navbar: يرسل تغييرات الوحدة -->
+<app-nav (unitChange)="onUnitChange($event)"></app-nav>
+
+<!-- Search bar + Date Picker -->
+<app-search
+  (search)="onSearch($event)"
+  (dateChange)="onDateChange($event)">
+</app-search>
+
+<!-- Home component: يستقبل البيانات ويعرض الكروت -->
+<div class="container mt-4">
+  <app-home
+    [unit]="unit"
+    [searchTerm]="searchTerm"
+    [selectedDate]="selectedDate">
+  </app-home>
+</div>
+
+<app-footer></app-footer>
